@@ -23,15 +23,14 @@ set FILE_FULL_NAME=%~nx1
 set BACKUP_BASE_DIR=%USERPROFILE%\backup
 set BACKUP_DIR=%BACKUP_BASE_DIR%\%FILE_NAME%
 set LOG_NAME=%BACKUP_DIR%\log.txt
-set BASE_TIME=%DATE:~0,4%%DATE:~5,2%%DATE:~8,2%%TIME:~0,2%%TIME:~3,2%
-
-echo %BACKUP_FILE_NAME%
+set FTIME=%TIME: =0%
+set BASE_TIME=%DATE:~0,4%%DATE:~5,2%%DATE:~8,2%%FTIME:~0,2%%FTIME:~3,2%
 
 call :logging ---------
 call :logging Start
 
 rem ---- Execute copy ----
-set COPY_NAME=%BACKUP_DIR%\%BASE_TIME%-%FILE_FULL_NAME%
+set COPY_NAME=%BACKUP_DIR%\%BASE_TIME%_%FILE_FULL_NAME%
 
 copy %FILE_PATH% %COPY_NAME%
 
