@@ -34,6 +34,7 @@ call :logging Start
 rem ---- Execute copy ----
 set COPY_NAME=%BACKUP_DIR%\%BASE_TIME%_%FILE_FULL_NAME%
 
+mkdir %COPY_NAME%
 copy %FILE_PATH% %COPY_NAME%
 
 call :logging Copy to %COPY_NAME%
