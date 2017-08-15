@@ -11,15 +11,15 @@ After clone or download this repository, you can use this with below command.
 cd windows-simple-file-copy
 
 rem First argument is backup target directory/file  
-simple-copy.bat %USERPROFILE%¥hoge
+simple-copy.bat %USERPROFILE%\hoge
 ```
 
-After this script, you can confirm backup folder on `%USERPROFILE%¥backup`.  
+After this script, you can confirm backup folder on `%USERPROFILE%\backup`.  
 If you want to do backup continuously, I recommend you to set Task Scheduler like below.  
 
-xxx <-- upload image  
+![sample](img/sample_trigger.PNG)
 
-In addition, you can see log on `%USERPROFILE%¥backup¥log.txt`
+In addition, you can see log on `%USERPROFILE%\backup\log.txt`
 
 ## Note
 
