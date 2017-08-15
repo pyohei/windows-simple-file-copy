@@ -11,8 +11,7 @@ After clone or download this repository, you can use this with below command.
 cd windows-simple-file-copy
 
 rem First argument is backup target directory/file  
-rem Second argument is backup directory name
-simple-copy.bat %USERPROFILE%¥hoge hoge
+simple-copy.bat %USERPROFILE%¥hoge
 ```
 
 After this script, you can confirm backup folder on `%USERPROFILE%¥backup`.  
