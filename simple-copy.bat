@@ -14,7 +14,7 @@ if "%~1" == "" (
 if %NO_ARGUMENT% == 1 (
     echo ERROR: No targetFilePath!
     echo.
-    echo   Usage: %0 [targetFilePath] [backupName]
+    echo   Usage: %0 [targetFilePath]
     exit /B
 )
 
