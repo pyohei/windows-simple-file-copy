@@ -20,6 +20,8 @@ If you want to do backup continuously, I recommend you to set Task Scheduler lik
 
 xxx <-- upload image  
 
+In addition, you can see log on `%USERPROFILE%¥backup¥log.txt`
+
 ## Note
 
 Originally, this tool create for myself.
