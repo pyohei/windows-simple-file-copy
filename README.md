@@ -1,4 +1,4 @@
-# Simple file backup script(Windows)
+# Simple file backup script (Windows)
 
 Create backup directory which you indicate, although it can use only Windows.  
 Backup directory created on `%USERPROFIE%\backup` folder. 
