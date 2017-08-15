@@ -1,3 +1,31 @@
-This is file copy tool on windows.  
-You can copy your file into `%USERPROFIE%\backup` folder.  
-Licence is MIT, but I will not futher develop. This is because, I created this tool for myself.
+# Simple file backup script(Windows)
+
+Create backup directory which you indicate, although it can use only Windows.  
+Backup directory created on `%USERPROFIE%\backup` folder. 
+
+## Usage
+
+After clone or download this repository, you can use this with below command.  
+
+```bat
+cd windows-simple-file-copy
+
+rem First argument is backup target directory/file  
+rem Second argument is backup directory name
+simple-copy.bat %USERPROFILE%¥hoge hoge
+```
+
+After this script, you can confirm backup folder on `%USERPROFILE%¥backup`.  
+If you want to do backup continuously, I recommend you to set Task Scheduler like below.  
+
+xxx <-- upload image  
+
+## Note
+
+Originally, this tool create for myself.
+Therefore there are some bugs.  
+If you find it, please tell me about it.
+
+## Licence 
+
+* MIT
