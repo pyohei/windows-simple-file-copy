@@ -42,7 +42,7 @@ echo F | xcopy /E /Y %FILE_PATH% %COPY_NAME%
 call :logging Copy to %COPY_NAME%
 
 rem ---- Zipping file ----
-rem   You must set your Lhaplus path like below.
+rem   If you wanto to compress with Lhaplus, you may set your Lhaplus path like below.
 rem   set Lhaplus="C:\Program Files (x86)\Lhaplus\Lhaplus.exe"
 if defined Lhaplus (
     %Lhaplus% /c:zip /o:%BACKUP_DIR% %COPY_NAME%
